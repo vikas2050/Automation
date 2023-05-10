@@ -81,6 +81,12 @@ public class Base {
 		Alert a = driver.switchTo().alert();
 		a.accept();
 	 }
+	 public void deselectAlertPopup() {
+			Alert a = driver.switchTo().alert();
+			a.dismiss();
+	 }
+		
+	 
 	 
 	 public void selectByVisibleText(WebElement ele,String value) {
 		 Select s = new Select(ele);
